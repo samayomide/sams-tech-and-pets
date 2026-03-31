@@ -3,16 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Us - Sams Tech and Pets</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        .contact-button { display: inline-block; padding: 10px 20px; color: white; background-color: #25D366; border-radius: 5px; text-decoration: none; }
-        .contact-button:hover { background-color: #1EBE59; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background-color: #f0f4f8; color: #333; }
+        
+        @keyframes slideDown {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(40px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes glow {
+            0%, 100% { text-shadow: 0 0 5px rgba(0, 71, 171, 0.5); }
+            50% { text-shadow: 0 0 15px rgba(0, 71, 171, 0.9); }
+        }
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            50% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+        }
+        
+        header { 
+            background-color: #0047AB; 
+            color: white; 
+            padding: 20px; 
+            text-align: center;
+            animation: slideDown 0.8s ease-out;
+        }
+        header h1 { animation: glow 2s infinite; }
+        
+        nav { 
+            background-color: white; 
+            padding: 15px; 
+            text-align: center; 
+            border-bottom: 2px solid #0047AB;
+            animation: slideDown 0.9s ease-out;
+        }
+        nav a { 
+            color: #0047AB; 
+            margin: 0 20px; 
+            text-decoration: none; 
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        nav a:hover { 
+            color: white;
+            background-color: #0047AB;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .container h2 { animation: slideUp 0.8s ease-out; }
+        
+        .contact-btn { 
+            display: inline-block; 
+            background-color: #25D366; 
+            color: white; 
+            padding: 15px 30px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            margin: 10px 0; 
+            font-weight: bold;
+            animation: slideUp 0.8s ease-out 0.2s both, pulse 2s infinite 0.8s;
+            transition: all 0.4s ease;
+        }
+        .contact-btn:hover { 
+            background-color: #1EBE59;
+            transform: scale(1.1);
+        }
+        
+        .channel-link { 
+            display: inline-block; 
+            background-color: #0047AB; 
+            color: white; 
+            padding: 15px 30px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            margin: 10px 0; 
+            font-weight: bold;
+            animation: slideUp 0.8s ease-out 0.3s both;
+            transition: all 0.4s ease;
+        }
+        .channel-link:hover { 
+            background-color: #003580;
+            transform: scale(1.1);
+        }
+        
+        footer { 
+            background-color: #0047AB; 
+            color: white; 
+            text-align: center; 
+            padding: 20px; 
+            margin-top: 30px;
+            animation: slideUp 0.8s ease-out 0.5s both;
+        }
     </style>
 </head>
 <body>
-    <h1>Contact Us</h1>
-    <p>If you have any questions, feel free to reach out to us through WhatsApp!</p>
-    <a href="https://wa.me/2348037001169" class="contact-button">Contact us on WhatsApp</a>
+    <header>
+        <h1>📞 Contact Us</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="electronics.html">Electronics</a>
+        <a href="pets.html">Pet Accessories</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    <div class="container">
+        <h2>Get in Touch</h2>
+        <p>We'd love to hear from you! Contact us through WhatsApp:</p>
+        
+        <a href="https://wa.me/2348037001169" class="contact-btn">💬 Message us on WhatsApp</a>
+        
+        <h3 style="margin-top: 30px; animation: slideUp 0.8s ease-out 0.4s both;">Follow Our Channel</h3>
+        <p>Subscribe to our WhatsApp channel for daily tips and updates:</p>
+        <a href="https://whatsapp.com/channel/0029VbCQbd78aKvQosAy8j3s" class="channel-link">📢 Join Learn Daily With SAM</a>
+        
+        <p style="margin-top: 20px;">Phone: +234 803 7001169</p>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 Sams Tech and Pets. All rights reserved.</p>
+    </footer>
 </body>
 </html>

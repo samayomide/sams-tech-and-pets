@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electronics - Sams Tech and Pets</title>
+    <title>Pet Accessories - Sams Tech and Pets</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: Arial, sans-serif; background-color: #f0f4f8; color: #333; }
@@ -16,6 +16,11 @@
             from { transform: translateY(40px); opacity: 0; }
             to { transform: translateY(0); opacity: 1; }
         }
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-2deg); }
+            75% { transform: rotate(2deg); }
+        }
         
         header { 
             background-color: #0047AB; 
@@ -24,6 +29,7 @@
             text-align: center;
             animation: slideDown 0.8s ease-out;
         }
+        header h1 { animation: wiggle 3s infinite; }
         
         nav { 
             background-color: white; 
@@ -64,12 +70,11 @@
         }
         .product-link:nth-of-type(1) { animation-delay: 0.1s; }
         .product-link:nth-of-type(2) { animation-delay: 0.2s; }
-        .product-link:nth-of-type(3) { animation-delay: 0.3s; }
         
         .product-link:hover { 
             background-color: #0047AB;
             color: white;
-            transform: translateX(10px);
+            transform: scale(1.05);
             box-shadow: 0 10px 25px rgba(0, 71, 171, 0.3);
         }
         
@@ -85,7 +90,7 @@
 </head>
 <body>
     <header>
-        <h1>📱 Electronics</h1>
+        <h1>🐾 Pet Accessories</h1>
     </header>
     
     <nav>
@@ -96,12 +101,11 @@
     </nav>
     
     <div class="container">
-        <h2>Amazing Electronics Products</h2>
-        <p>Find the best deals on quality electronics!</p>
+        <h2>Everything for Your Pets</h2>
+        <p>Quality pet accessories at great prices!</p>
         
-        <a href="https://s.click.aliexpress.com/e/_EIBcKCs" class="product-link">✨ Product 1 - Click to View</a>
-        <a href="https://s.click.aliexpress.com/e/_Ey8TrX6" class="product-link">✨ Product 2 - Click to View</a>
-        <a href="https://s.click.aliexpress.com/e/_EQkNjOs" class="product-link">✨ Product 3 - Click to View</a>
+        <a href="https://s.click.aliexpress.com/e/_EISCgt2" class="product-link">🐕 Pet Product 1 - Click to View</a>
+        <a href="https://s.click.aliexpress.com/e/_EzeZ10c" class="product-link">🐱 Pet Product 2 - Click to View</a>
     </div>
     
     <footer>
